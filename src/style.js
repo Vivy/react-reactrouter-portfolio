@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
  *,
 *::before,
 *::after{ 
-padding: 0;
+  padding: 0;
   margin: 0;
   border: 0;
   outline: 0;
@@ -52,6 +52,7 @@ h1,h2,h3,h4,h5{
 h1{
   font-size: 3rem;
 }
+
 h2{
   font-size: 2rem;
 }
@@ -59,14 +60,17 @@ h2{
 a{
   color: var(--color-gray-100);
 }
+
 p{
   color: var(--color-gray-300);
 }
+
 img{
   display:block;
   width: 100%;
   object-fit: cover;
 }
+
 .btn{
     color:var(--color-gray-100);
     width: fit-content;
@@ -95,4 +99,7 @@ img{
 
   }
 
+section{
+    margin-top: 10rem;
+  }
 `
