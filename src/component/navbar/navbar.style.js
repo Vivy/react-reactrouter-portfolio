@@ -13,6 +13,7 @@ export const NavBar = styled.nav`
 `
 export const Button = styled.button`
   display: none;
+
   @media screen and (max-width: 1024px) {
    display :inline-block ;
    background: transparent;
@@ -41,9 +42,12 @@ export const NavLinks = styled.ul`
 display: flex;
 gap: 3.5rem;
 align-items: center;
+perspective: 400px;
+
   a{
     transition: var(--transition);
   }
+
   a:hover{
     color: var(--color-secondary);
   }
@@ -51,6 +55,7 @@ align-items: center;
   .active-nav{
     position: relative;
   }
+
   .active-nav::after{
     content: '';
     display: block;
@@ -69,16 +74,44 @@ align-items: center;
     right: 0;
     flex-direction: column;
     gap: 0;
-
-    .active-nav, 
+    
+    a> .active-nav, 
     .active-nav::after{
-      display: hidden;
+      display: none;
     }
 
     li{
       height: 4rem;
       width: 100%;
-      box-shadow: -2rem 2rem 5rem rgba(0,0,0,0.4);
+      box-shadow: -2rem 2rem 5rem rgba(0,0,0,0.5);
+      animation: navAnimation 600ms ease forwards;
+      transform: rotateX(90deg);
+      opacity: 0;
+      transform-origin: top;
+    }
+    li:nth-child(2){
+      animation-delay: 200ms;
+    }
+    li:nth-child(3){
+      animation-delay: 400ms;
+    }
+    li:nth-child(4){
+      animation-delay: 600ms;
+    }
+    li:nth-child(5){
+      animation-delay: 800ms;
+    }
+    li:nth-child(6){
+      animation-delay: 1s;
+    }
+    li:nth-child(7){
+      animation-delay: 1.2s;
+    }
+    @keyframes navAnimation {
+      to{
+        transform: rotateX(0);
+        opacity: 1;
+      }
     }
 
      a {
