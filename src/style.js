@@ -39,5 +39,30 @@ body{
   background: var(--color-gray-600);
 }
 
+.contrainer{
+  width: var(--container--width-lg);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+h1,h2,h3,h4,h5{
+  line-height: 1.2;
+  color:var(--color-gray-100)
+}
 
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+
+a{
+  color: var(--color-gray-100);
+}
+
+img{
+  display:block;
+  width: 100%;
+  object-fit: cover;
+}
 `
