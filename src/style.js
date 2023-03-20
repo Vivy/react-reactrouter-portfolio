@@ -59,10 +59,40 @@ h2{
 a{
   color: var(--color-gray-100);
 }
-
+p{
+  color: var(--color-gray-300);
+}
 img{
   display:block;
   width: 100%;
   object-fit: cover;
 }
+.btn{
+    color:var(--color-gray-100);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    background: var(--color-primary);
+    border-radius: 1.5rem;
+    transition: var(--transition);
+    &:hover{
+      background: var(--color-secondary);
+      color: var(--color-gray-600);
+    }
+    &.lg{
+      padding:1.2rem 3rem;
+      border-radius: 2rem;
+      font-size: 1.1rem;
+    }
+    &.sm{
+      padding: 0.4rem 1.2rem;
+      ;
+      font-size: 0.9rem;
+    }
+    &.sm:hover{
+      background:var(--color-gray-100);
+    }
+
+  }
+
 `

@@ -75,7 +75,7 @@ perspective: 400px;
     flex-direction: column;
     gap: 0;
     
-    a> .active-nav, 
+    a>.active-nav, 
     .active-nav::after{
       display: none;
     }
@@ -122,6 +122,14 @@ perspective: 400px;
       align-items: center;
       padding: 1rem 5rem 1rem 3rem;
     }
+  }
+
+  .show__nav{
+    display: flex;
+  }
+
+  .hide__nav{
+    display: none;
   }
 
   `
