@@ -18,4 +18,8 @@ export const SectionHead = styled.div`
 svg{
   font-size: 2rem;
 }
+
+&.testimonials__head{
+  justify-content: center;
+}
 `

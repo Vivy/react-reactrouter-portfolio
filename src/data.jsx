@@ -132,7 +132,7 @@ export const testimonials = [
     quote:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsam facere ea a laboriosam sed? Quod vel voluptates a! Maxime minima cumque aut? In expedita numquam consectetur non officia iusto.',
     job: 'Student',
-    avatar: './images/avatar1',
+    avatar: './images/avatar1.jpg',
   },
   {
     id: 2,

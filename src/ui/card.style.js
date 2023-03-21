@@ -48,4 +48,17 @@ export const Card = styled.article`
     align-items: center;
     justify-content: center;
   }
+
+  &.testimonials {
+    position: relative;
+    text-align: left;
+    margin-top: 5rem;
+    p{
+      font-style: italic;
+      margin: 1rem 0 2rem;
+    }
+    small{
+      margin-top: 0.3rem;
+    }
+  }
 `
