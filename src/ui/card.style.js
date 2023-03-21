@@ -39,6 +39,7 @@ export const Card = styled.article`
     margin-top: 1rem;
     display: block;
     font-weight: 300;
+    color: var(--color-gray-400);
   }
 
   a{
