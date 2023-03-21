@@ -122,15 +122,16 @@ perspective: 400px;
       align-items: center;
       padding: 1rem 5rem 1rem 3rem;
     }
+    
+    .show__nav{
+      display: flex;
+    }
+  
+    .hide__nav{
+      display: none;
+    }
   }
 
-  .show__nav{
-    display: flex;
-  }
-
-  .hide__nav{
-    display: none;
-  }
 
   `
 
