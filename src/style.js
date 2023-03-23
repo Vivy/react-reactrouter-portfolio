@@ -102,4 +102,27 @@ img{
 section{
     margin-top: 10rem;
   }
+
+
+
+  @media screen and (max-width:1024px){
+  width: var(--container--width-md);
+    
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 1.6rem;
+  }
+
+
+  @media screen and (max-width:600px){
+    h1{
+      font-size: 2.2rem;
+      line-height: 1.3;
+    }
+  }
 `

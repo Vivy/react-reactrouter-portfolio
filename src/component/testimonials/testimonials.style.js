@@ -3,6 +3,14 @@ import styled from 'styled-components';
 export const Testimonials = styled.section`
   width: 50rem;
   margin-inline: auto;
+
+  @media screen and (max-width:1024px){
+    width: 75%;
+  }
+
+  @media screen and (max-width:600px){
+    width: 100%;
+  }
 `
 
 export const Container = styled.div`

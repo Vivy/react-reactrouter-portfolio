@@ -9,6 +9,12 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 38% 50%;
   gap: 12%;
+
+  @media screen and (max-width:1024px){
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 4rem;
+  }
 `
 export const Left = styled.div`
 
@@ -18,6 +24,10 @@ export const ValuesImage = styled.div`
   transition: var(--transition);
   &:hover{
     filter: saturate(1);
+  }
+
+  @media screen and (max-width:1024px){
+    display: none;
   }
 `
 export const Right = styled.div`
@@ -35,9 +45,25 @@ export const Wrapper = styled.div`
     padding-top: 3.5rem;
     text-align: left;
     position: relative;
+
     span{
       position: absolute;
       top: -1.5rem;
     }
+
+    @media screen and (max-width:1024px){
+      gap: 4rem 3rem;
+    }
+
+    @media screen and (max-width:600px){
+      width: 84%;
+      margin-inline: auto;
+    }
+    
   }
-`
+  
+  @media screen and (max-width:600px){
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  `

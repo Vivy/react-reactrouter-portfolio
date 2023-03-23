@@ -6,6 +6,10 @@ export const Footer = styled.footer`
   padding-top: 7rem;
   font-size: 0.9rem;
   color: var(--color-gray-100);
+
+  @media screen and (max-width:600px){
+    margin-top: 7rem;
+  }
 `
 
 export const Container = styled.div`
@@ -15,6 +19,16 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 26rem 1fr 1fr 1fr;
   gap: 6rem;
+
+  @media screen and (max-width:1024px){
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  @media screen and (max-width:600px){
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
   
 `
 
@@ -27,11 +41,19 @@ export const Article = styled.article`
   p{
     margin-top: 0.5rem;
     color: var(--color-gray-200  );
+
+    @media screen and (max-width:600px){
+      text-align: center;
+    }
   }
 
   h4{
     margin-bottom: 0.6rem;
     font-size: 1rem;
+  }
+
+  @media screen and (max-width:600px){
+    align-items: center;
   }
 `
 export const Socials = styled.div`
