@@ -26,6 +26,7 @@ export const Article = styled.article`
 
   p{
     margin-top: 0.5rem;
+    color: var(--color-gray-200  );
   }
 
   h4{
@@ -45,6 +46,11 @@ export const Socials = styled.div`
     border: 1px solid transparent;
     border-radius: 0.6rem;
     transition: var(--transition);
+     
+    &:hover{
+      border-color: var(--color-gray-100);
+      background-color: transparent;
+    }
 
     svg{
       color: var(--color-gray-600);
@@ -52,5 +58,9 @@ export const Socials = styled.div`
   }
 `
 export const Copywright = styled.div`
-  
+  color: var(--color-gray-100);
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 2px solid var(--color-primary--variant);
+  margin-top: 5rem;
 `

@@ -77,7 +77,6 @@ a:hover{
   gap: 0;
   ${({ isShowing }) => isShowing ? 'display:flex;' : 'display:none;'};
   
-  
   a>.active-nav, 
   .active-nav::after{
     display: none;
@@ -127,7 +126,5 @@ a:hover{
     }
 
   }
-
-
   `
 
