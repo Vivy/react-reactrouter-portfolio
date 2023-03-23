@@ -35,6 +35,7 @@ export const Card = styled.article`
     border-radius: 1rem;
     transition: var(--transition);
   }
+  
   small{
     margin-top: 1rem;
     display: block;
