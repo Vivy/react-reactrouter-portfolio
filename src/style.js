@@ -124,5 +124,9 @@ section{
       font-size: 2.2rem;
       line-height: 1.3;
     }
+
+    section{
+      margin-top: 7rem;
+    }
   }
 `

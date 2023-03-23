@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Footer from './component/footer/footer';
 import NavBar from './component/navbar/navbar';
 import About from './pages/about/about';
 import Contact from './pages/contact/contact';
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='trainers' element={<Trainers />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

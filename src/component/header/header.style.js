@@ -40,11 +40,13 @@ export const Container = styled.div`
 `
 export const Left = styled.div`
   margin-top: -3rem;
+
   h4{
     margin-bottom: 1rem;
     color: var(--color-secondary);
     font-weight: 400;
   }
+  
   p{
     margin: 1rem 0 3.5rem;
     font-size: 1.1rem;
