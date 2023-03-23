@@ -1,5 +1,4 @@
 import Faqs from '../../component/faqs/faqs';
-import Footer from '../../component/footer/footer';
 import Header from '../../component/header/header';
 import Programs from '../../component/programs/programs';
 import Testimonials from '../../component/testimonials/testimonials';
@@ -14,7 +13,6 @@ const Home = () => {
       <Values />
       <Faqs />
       <Testimonials />
-      <Footer />
     </S.Home>
   );
 };
