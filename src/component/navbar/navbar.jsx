@@ -8,13 +8,14 @@ import { TfiClose } from 'react-icons/tfi';
 
 const NavBar = () => {
   const [close, setClose] = useState(false);
+
   return (
     <S.NavBar>
       <S.NavContainer>
         <Link to='/' onClick={() => setClose(false)}>
           <S.Img src={Logo} alt='nav logo' />
         </Link>
-        <S.NavLinks className={`${close} ? 'show__nav' : 'hide__nav'`}>
+        <S.NavLinks isShowing={close}>
           {links.map(({ name, path }) => {
             return (
               <li key={name}>

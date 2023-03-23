@@ -36,6 +36,7 @@ export const NavContainer = styled.div`
 `
 export const Img = styled.img`
   width: 7rem;
+  display: block;
 `
 
 export const NavLinks = styled.ul`
@@ -44,41 +45,43 @@ gap: 3.5rem;
 align-items: center;
 perspective: 400px;
 
-  a{
-    transition: var(--transition);
-  }
+a{
+  transition: var(--transition);
+}
 
-  a:hover{
-    color: var(--color-secondary);
-  }
+a:hover{
+  color: var(--color-secondary);
+}
 
-  .active-nav{
-    position: relative;
-  }
+.active-nav{
+  position: relative;
+}
 
+.active-nav::after{
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--color-primary);
+  position: absolute;
+  left:calc(50%- 0.6rem);
+  transform: rotate(45deg);
+  margin-top: 0.9rem;
+}
+
+@media screen and (max-width: 1024px){
+  position: absolute;
+  top: 100%;
+  right: 0;
+  flex-direction: column;
+  gap: 0;
+  ${({ isShowing }) => isShowing ? 'display:flex;' : 'display:none;'};
+  
+  
+  a>.active-nav, 
   .active-nav::after{
-    content: '';
-    display: block;
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: var(--color-primary);
-    position: absolute;
-    left:calc(50%- 0.6rem);
-    transform: rotate(45deg);
-    margin-top: 0.9rem;
+    display: none;
   }
-
-  @media screen and (max-width: 1024px){
-    position: absolute;
-    top: 100%;
-    right: 0;
-    flex-direction: column;
-    gap: 0;
-    
-    a>.active-nav, 
-    .active-nav::after{
-      display: none;
-    }
 
     li{
       height: 4rem;
@@ -122,14 +125,7 @@ perspective: 400px;
       align-items: center;
       padding: 1rem 5rem 1rem 3rem;
     }
-    
-    .show__nav{
-      display: flex;
-    }
-  
-    .hide__nav{
-      display: none;
-    }
+
   }
 
 

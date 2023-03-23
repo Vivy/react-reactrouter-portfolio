@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <S.Footer>
       <S.Container>
-        <article>
+        <S.Article>
           <Link to='/' className='logo'>
             <img src={Logo} alt='Footer logo' s />
           </Link>
@@ -50,17 +50,32 @@ const Footer = () => {
               <FaInstagramSquare />
             </a>
           </S.Socials>
-        </article>
-        <article>
+        </S.Article>
+        <S.Article>
           <h4>Permalinks</h4>
           <Link to='/about'>About</Link>
           <Link to='/plans'>Plans</Link>
           <Link to='/trainers'>Trainers</Link>
           <Link to='/gallery'>Gallery</Link>
           <Link to='/contact'>Contact</Link>
-        </article>
+        </S.Article>
+        <S.Article>
+          <h4>Insights</h4>
+          <Link to='/s'>Blog</Link>
+          <Link to='/s'>Case Studies</Link>
+          <Link to='/s'>Events</Link>
+          <Link to='/s'>Communities</Link>
+          <Link to='/s'>FAQs</Link>
+        </S.Article>
+        <S.Article>
+          <h4>Get In Touch</h4>
+          <Link to='/contact'>Contact Us</Link>
+          <Link to='/s'>Support</Link>
+        </S.Article>
       </S.Container>
-      <S.Copywright></S.Copywright>
+      <S.Copywright>
+        <small>2023 Vivy &copy; All The Rights In the World</small>
+      </S.Copywright>
     </S.Footer>
   );
 };
