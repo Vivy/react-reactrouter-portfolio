@@ -1,6 +1,6 @@
 import Logo from '/images/logo.png';
-import { Link, NavLink } from 'react-router-dom';
 import { links } from '../../data';
+import { Link, useLocation } from 'react-router-dom';
 import * as S from './navbar.style';
 import { FaBars } from 'react-icons/fa';
 import { useState } from 'react';
@@ -8,7 +8,17 @@ import { TfiClose } from 'react-icons/tfi';
 
 const NavBar = () => {
   const [close, setClose] = useState(false);
+  const { pathname } = useLocation();
+  console.log(pathname, 'path');
 
+  let PI = 3.14159;
+  let num = PI.toFixed(3);
+  console.log(num);
+  let num2 = PI.toPrecision(3);
+  console.log(num2);
+
+  let lightSpeed = 186000;
+  console.log(lightSpeed.toExponential());
   return (
     <S.NavBar>
       <S.NavContainer>
@@ -19,13 +29,13 @@ const NavBar = () => {
           {links.map(({ name, path }) => {
             return (
               <li key={name}>
-                <NavLink
+                <S.NavLink
                   to={path}
-                  className={({ isActive }) => (isActive ? 'active-nav' : '')}
+                  $alabala={pathname === path}
                   onClick={() => setClose((prev) => !prev)}
                 >
                   {name}
-                </NavLink>
+                </S.NavLink>
               </li>
             );
           })}

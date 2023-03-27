@@ -1,5 +1,22 @@
 import styled from 'styled-components';
+import { NavLink as NavLinkRRD } from 'react-router-dom';
 
+export const NavLink = styled(NavLinkRRD)`
+  position:relative;
+  ${({ $alabala }) => $alabala ? `
+  &::after{
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--color-primary);
+  position: absolute;
+  left:calc(50%- 0.6rem);
+  transform: rotate(45deg);
+  margin-top: 0.9rem;
+}
+  ` : ''}
+`
 export const NavBar = styled.nav`
   height: 5rem;
   width: 100vw;
@@ -53,7 +70,7 @@ a:hover{
   color: var(--color-secondary);
 }
 
-.active-nav{
+/* .active-nav{
   position: relative;
 }
 
@@ -67,7 +84,7 @@ a:hover{
   left:calc(50%- 0.6rem);
   transform: rotate(45deg);
   margin-top: 0.9rem;
-}
+} */
 
 @media screen and (max-width: 1024px){
   position: absolute;

@@ -62,4 +62,21 @@ export const Card = styled.article`
       margin-top: 0.3rem;
     }
   }
+
+  &.trainer{
+    padding: 1rem;
+
+    p{
+      margin-top:0.5rem;
+    }
+
+    h3{
+      margin-top: 2rem;
+    }
+
+    @media screen and (max-width:600px){
+      width: 90%;
+      margin-inline: auto;
+    }
+  }
 `
